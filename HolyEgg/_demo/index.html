@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, minimal-ui" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<meta name="format-detection" content="telephone=no, email=no" />
+<link rel="stylesheet" type="text/css" href="css/min.css">
+<title>蛋蛋</title>
+</head>
+<body class="index">
+	<!-- 封面 -->
+	<section id="section_one" class="box cover">
+		<div class="egg">
+			<a href="javascript:;" onclick="clickhide('.box','.making_page');">
+				<img src="images/egg.png">
+			</a>
+		</div>
+		
+		<div class="cover_con text_center">
+			<div class="cover_title">
+				<img class="dh" src="images/index_titlebj.png">
+				<img class="img" src="images/index_titlewz.png">
+			</div>
+			<div class="cover_p text_center">
+				<img src="images/cover_p.png">
+			</div>
+		</div>
+
+		<div class="logo clearfix">
+			<img class="logo-l" src="images/logo.png">
+			<img class="logo-r" src="images/logo1.png">
+		</div>
+
+	</section>
+	
+	<!-- 制作业 -->
+	<section id="section_two" class="box making_page hide">
+		<div class="making_page_con text_center po-r-imgboc">
+			<img class="dh" src="images/danjihe1_bj.png">
+			<img class="po-a-img" src="images/danjihe1_wz.png">
+		</div>
+		
+		<div class="egg_list">
+			<ul class="clearfix">
+				<li>
+					<a title="0" onclick="clickhide('.box','.share');" href="javascript:;">
+						<img class="img_img" src="images/shengdan_wanzheng.png">
+						<img class="img_wz" src="images/shengdan_wz.png">
+					</a>
+				</li>
+				<li>
+					<a title="1" onclick="clickhide('.box','.share');" href="javascript:;">
+						<img class="img_img" src="images/shiyi_wanzheng.png">
+						<img class="img_wz" src="images/shiyi_wz.png">
+					</a>
+				</li>
+				<li>
+					<a title="2" onclick="clickhide('.box','.share');" href="javascript:;">
+						<img class="img_img" src="images/yanzhi_wanzheng.png">
+						<img class="img_wz" src="images/yanzhi_wz.png">
+					</a>
+				</li>
+				<li>
+					<a title="3" onclick="clickhide('.box','.share');" href="javascript:;">
+						<img class="img_img" src="images/youshan_wanzheng.png">
+						<img class="img_wz" src="images/youshan_wz.png">
+					</a>
+				</li>
+				<li>
+					<a title="4" onclick="clickhide('.box','.share');" href="javascript:;">
+						<img class="img_img" src="images/shenzao_wanzheng.png">
+						<img class="img_wz" src="images/shenzao_wz.png">
+					</a>
+				</li>
+				<li>
+					<a title="5" onclick="clickhide('.box','.share');" href="javascript:;">
+						<img class="img_img" src="images/lanlan_wanzheng.png">
+						<img class="img_wz" src="images/lanlan_wz.png">
+					</a>
+				</li>
+			</ul>
+		</div>
+
+	</section>
+
+	<!-- 分享页 -->
+	<section id="section_three" class="box share hide">
+		<div class="box-bj"></div>
+		<div class="share_con">
+			<div class="img1">
+				<img src="images/dan_top0.png">
+			</div>
+			<div class="img2">
+				<img src="images/share_ttbj.png">
+				<img class="tt-img" src="images/dan_title0.png">
+			</div>
+		</div>
+		<div class="css3-img">
+			<img class="css3-sui3" src="">
+			<img class="css3-sui1" src="">
+			<img class="css3-sui2" src="">
+			<img class="css3-likai" src="">
+			<img class="css3-likai0" src="">
+			<img class="css3-chuizi" src="images/chuizi.png"></div>
+		</div>
+		<div class="broken_egg text_center">
+			<a onclick="clickhide(' ','.share_guide');" class="share_btn" href="javascript:;">
+				<img src="images/xiadan_brn1.png">
+			</a>
+		</div>
+	</section>
+
+
+	<div class="box zhufu hide">
+		<div class="zhufu_tt text_center po-r-imgboc">
+			<img src="images/zhufu_wz_bj.png">
+			<img class="po-a-img zhufu_wz01" src="images/zhufu_wz01.png">
+			<img class="po-a-img zhufu_wz02" src="images/zhufu_wz02.png">
+		</div>
+		
+		<div class="zhufu_rwm text_center">
+			<p>业务<br>办理网点<br>请关注</p>
+			<img src="images/qianbao_app.png"><br>
+			<img src="images/qianbao_weixin.png">
+		</div>
+
+	</div>
+
+
+	<div class="box share_guide hide" onclick="clickhide('.box','.zhufu');">
+		<img src="images/share_guide.png">
+	</div>
+
+</body>
+</html>
+<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="js/min.js"></script>
+<script type="text/javascript">
+
+
+$(".egg_list li").click(function(){
+	var index=$(this).index();
+	$(".share_con .img1 img").attr("src","images/dan_top"+index+".png");
+	$(".share_con .img2 .tt-img").attr("src","images/dan_title"+index+".png");
+
+	$(".css3-img .css3-likai").attr("src","images/dan_liekaib"+index+".png");
+	$(".css3-img .css3-likai0").attr("src","images/dan_liekaia"+index+".png");
+
+	$(".css3-img .css3-sui1").attr("src","images/dan_neibu"+index+".png");
+	$(".css3-img .css3-sui2").attr("src","images/dan_suike"+index+".png");
+	$(".css3-img .css3-sui3").attr("src","images/dan_bk"+index+".png");
+})
+</script>
