@@ -1,4 +1,4 @@
-# 微信小游戏互动 案例
+# HolyEgg 微信小游戏互动 案例
 
 首页文件 ./Act/HolyEgg/Controler/weixin.class.php :: index()
 访问地址 ./HolyEgg/?/weixin/index/
